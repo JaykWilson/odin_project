@@ -47,10 +47,27 @@ button {
 	margin: 10px;
 }
 
-#your-score,
+#my-score,
 #pc-score
 {
 	color: white;
 	margin-left: 0;
 }
-/* what */
+
+#handResult
+{
+	display: flex;
+	flex-direction: row;
+	justify-content:space-evenly;
+
+	align-items: center;
+}
+
+.handBox
+{
+	border: 1px solid black;
+	width: 85px;
+	text-align: center;
+}
+
+
