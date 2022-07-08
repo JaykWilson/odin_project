@@ -1,0 +1,56 @@
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #EFC050;
+	font-family: 'Courier New', Courier, monospace;
+}
+
+.game {
+	border: 2px solid black;
+}
+
+.button-container {
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+	margin: 20px;
+}
+
+button {
+	font-size: 30px;
+	font-weight: 900;
+	border-radius: 10px;
+	margin: 20px;
+	background-color: black;
+	color: rgb(84, 217, 226);
+}
+
+.scoreboard {
+	display: flex;
+	flex-direction: column;
+}
+
+#scorelabel {
+	color:white;
+	align-self: center;
+	font-size: 50px;
+	margin: 0;
+	margin-bottom: 35px;
+}
+
+.score-container {
+	display: flex;
+	justify-content: space-around;
+	font-size: 23px;
+	margin: 10px;
+}
+
+#your-score,
+#pc-score
+{
+	color: white;
+	margin-left: 0;
+}
+/* what */
