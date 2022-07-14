@@ -32,7 +32,6 @@ if ((initSlider % 2) == 0) {
 	initSlider -= 1;
 }
 var dimension = initSlider;
-// FINISH integrating color tint mode
 var colorMode = false;
 const container = document.querySelector('#container');
 var containerHeight = container.getBoundingClientRect().height;
@@ -40,7 +39,6 @@ var count = 0;
 var temp = [];
 createGrid(dimension, temp);
 
-// MERGE this function with create grid
 function createGrid(dimension, colorsArray) {
 	var gridSize = dimension*dimension;
 	for (let i = 0; i < gridSize; i++)
@@ -57,7 +55,6 @@ function createGrid(dimension, colorsArray) {
 		else {
 			div.style.backgroundColor = "white";
 		}
-		
 	}
 
 	const boxes = document.querySelectorAll('.box');
@@ -117,7 +114,6 @@ colorButton.addEventListener('click', function() {
 
 
 function colorGrid(colorScheme) {
-
 	var gridContainer = document.querySelector('#container');
 	var squares = gridContainer.childNodes;
 	for (let i = 0; i < squares.length; i++){
@@ -207,8 +203,3 @@ animateButton.addEventListener('click', animate);
 // const greenGroup = ["#ADFF2F","#7FFF00","#7CFC00","#00FF00","#32CD32","#98FB98","#90EE90","#00FA9A",
 // 					"#00FF7F","#3CB371","#2E8B57","#2E8B57","#008000","#006400","#9ACD32","#6B8E23",
 // 					"#556B2F","#66CDAA","#8FBC8F","#20B2AA","#008B8B","#008080"];
-
-// BUGS
-// 1. scaling issues with containers
-// 2. remove unused buttons
-// 3. make control panel container fit to size of children content
