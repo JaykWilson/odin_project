@@ -8,6 +8,7 @@ header
 {
 	color: salmon;
 }
+
 .calc-container
 {
 	display: flex;
@@ -17,9 +18,7 @@ header
 	top: 50%;
 	left: 50%;
 	margin-top: -275px;
-	/* height: 550px; */
 	margin-left: -500px;
-	
 }
 
 .math-field-container
@@ -53,7 +52,6 @@ header
 {
 	display: flex;
 	flex-flow: row wrap;
-	/* align-items: space-between; */
 	justify-content: space-between;
 
 }
