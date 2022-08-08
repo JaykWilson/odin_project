@@ -1,0 +1,110 @@
+body
+{
+	background-color: rgb(66, 66, 66);
+	font-family: monospace;
+}
+
+header
+{
+	color: salmon;
+}
+
+.calc-container
+{
+	display: flex;
+	flex-direction: column;
+	width: 850px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -275px;
+	margin-left: -500px;
+}
+
+.math-field-container
+{
+	display: flex;
+	margin: 5px;
+	padding: 10px;
+	padding-left: 20px;
+	padding-right: 20px;
+	border: 1px solid cadetblue;
+	height: 80px;
+	color: greenyellow;
+	border-radius: 5px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.math-field
+{
+	font-size: 20px; 
+	color: rgb(255, 193, 241);
+}
+
+.answer-field
+{
+	font-size: 20px; 
+	color: rgb(95, 238, 66);
+}
+
+.button-row-container
+{
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+
+}
+
+.num-button,
+.op-button,
+.clear-button,
+.dark-mode,
+.random-number,
+.back-button
+{
+	display: flex;
+	font-family: monospace;
+	font-size: 50px;
+	margin: 5px;
+	padding: 15px;
+	border: 1px solid cornflowerblue;
+	border-radius: 5px;
+	width: 170px;
+	color:azure;
+	justify-content: center;
+	align-items: center;
+}
+
+.clear_button
+{
+	justify-content: flex-end;
+}
+
+.num-button
+{
+	background-color: rgb(143, 143, 143);
+}
+
+.op-button,
+.clear-button,
+.back-button,
+.random-number
+{
+	background-color: rgb(107, 114, 109);
+}
+
+#answer-button
+{
+	background-color: rgb(114, 77, 45);
+}
+
+.random-number,
+.back-button,
+.dark-mode
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	font-size: 20px;
+}

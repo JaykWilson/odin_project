@@ -1,0 +1,128 @@
+html, body, .viewport {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: monospace;
+}
+
+.wrap 
+{
+	display: flex;
+}
+button
+{
+	font-family: monospace;
+	background-color: rgb(202, 250, 248);
+	border-radius: 5px;
+}
+
+.button-toggle
+{
+	background-color:rgb(140, 0, 255);
+}
+
+#left-side-bar
+{
+	background-color: #9FE2BF;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	order: 1;
+}
+
+#right-side-bar
+{
+	background-color: #9FE2BF;
+	order: 3;
+}
+
+#container
+{
+	background-color: white;
+	display: flex;
+	align-items:flex-start;
+	justify-content: flex-start;
+	width: 90vh;
+	height: 90vh;
+	flex-flow: wrap;
+	flex: 1;
+	order: 2;
+	overflow: hidden;
+}
+
+#control-panel
+{
+	background-color: #c6e0d3;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+}
+
+body 
+{
+	display: flex;
+	justify-content:flex-start;
+	align-items: center;
+	align-content: center;
+	background-color: aqua;
+}
+
+.box
+{
+	align-items:flex-start;
+	justify-self:flex-start;
+	flex: 1 1 auto;
+} 
+
+/* SLIDER */
+#dimension-slider
+{
+	display: flex;
+	flex-direction: column;
+}
+
+#dimension-div
+{
+	align-self: center;
+	margin: .2em;
+}
+.slidecontainer {
+	width: 100%; /* Width of the outside container */
+  }
+  
+  /* The slider itself */
+  .slider {
+	-webkit-appearance: none;  /* Override default CSS styles */
+	appearance: none;
+	width: 100%; /* Full-width */
+	height: 25px; /* Specified height */
+	background: #d3d3d3; /* Grey background */
+	outline: none; /* Remove outline */
+	opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+	-webkit-transition: .2s; /* 0.2 seconds transition on hover */
+	transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+	opacity: 1; /* Fully shown on mouse-over */
+  }
+  
+  /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+  .slider::-webkit-slider-thumb {
+	-webkit-appearance: none; /* Override default look */
+	appearance: none;
+	width: 25px; /* Set a specific slider handle width */
+	height: 25px; /* Slider handle height */
+	background: #04AA6D; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+	
+  }
+  
+  .slider::-moz-range-thumb {
+	width: 25px; /* Set a specific slider handle width */
+	height: 25px; /* Slider handle height */
+	background: #04AA6D; /* Green background */
+	cursor: pointer; /* Cursor on hover */
+  }
+  /* SLIDER END */
